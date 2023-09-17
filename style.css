@@ -104,8 +104,14 @@ input{
 }
 @media only screen and (max-width: 600px) {
     /* Styles for screens smaller than 600px (typical mobile devices) */
+    
+    .main{
+      height: 76vh
+    }
     .title {
-      font-size: 1rem; /* Adjust the font size */
+      font-size: 1.3rem; /* Adjust the font size */
+      margin-top: 0px;
+      padding: 0px;
     }
   input{
     width: 100px;
@@ -122,6 +128,7 @@ input{
 
   .overlay{
     display: grid;
+    height: 45vh;
   }
     .col div {
       width: 100%; /* Make each column take up full width */
@@ -137,7 +144,7 @@ input{
     flex-direction: column;
     }
     .gallery-title{
-        height: 170vh;
+        height: 140vh;
         padding-top: 5%;
         margin-bottom: 12px;
         background-size: cover;
