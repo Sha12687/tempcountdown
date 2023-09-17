@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(bg2.jpg) ;
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat;
+}
+
+.overlay{
+    width: 100%;
+    height: 68vh;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0,0,0.5);
+
+}
+.img {
+   
+  text-align: center; /* Center the image */
+ 
+}
+.img img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 2px 4px rgba(255,255,255, 0.3);
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 1.2rem; /* Increase the font size for better readability */
+    font-family: 'Montserrat', sans-serif; /* Use the Google Font */
+    text-align: center; /* Center the text */
+    max-width: 800px; /* Set a maximum width for better readability on larger screens */
+    margin: 0 auto; /* Center the paragraph horizontally */
+    line-height: 1; /* Adjust the line height for better readability */
+    color: #ffffff; /* Set the text color to white */
+    padding: 20px; /* Add some padding for breathing room */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+    border-radius: 10px; /* Add rounded corners for a softer look */
+  }
+  
+.title{
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.col{
+    margin-top: 20px;
+    width: 1000px;
+    height: 100px;
+    text-align: center;
+   justify-content: center;
+    display: flex;
+  color: white;
+}
+.col div{
+    width: 250px;
+    text-align: center;
+}
+input{
+    width: 40%;
+    height: 50px;
+    background-color: rgb(255,255, 255,0.7);
+    border-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.gallery-title{
+    background-image: url(img-bg.jpg);
+    position: relative;
+    font-style: italic;
+    text-align: center;
+    padding-top: 20px;
+    height: 60vh;
+   
+}
+.img-gallery{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+}
+.second{
+    height: 40vh;
+}
+@media only screen and (max-width: 600px) {
+    /* Styles for screens smaller than 600px (typical mobile devices) */
+    .title {
+      font-size: 1rem; /* Adjust the font size */
+    }
+  input{
+    width: 100px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+    .col {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+      flex-direction: row; /* Stack the columns on top of each other */
+    }
+
+  .overlay{
+    display: grid;
+  }
+    .col div {
+      width: 100%; /* Make each column take up full width */
+      margin-bottom: 10px; /* Add some space between the columns */
+      margin-bottom: 10px;
+    }
+  
+    input {
+      width: 80%; /* Make the inputs a bit narrower for smaller screens */
+    }
+    .img-gallery{
+    display: flex;
+    flex-direction: column;
+    }
+    .gallery-title{
+        height: 170vh;
+        padding-top: 5%;
+        margin-bottom: 12px;
+        background-size: cover;
+        background-position: center center; 
+        background-repeat: no-repeat;
+    }
+    .second{
+        height: 100vh;
+    }
+  }
+  
