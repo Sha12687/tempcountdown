@@ -144,7 +144,7 @@ input{
     flex-direction: column;
     }
     .gallery-title{
-        height: 170vh;
+        height: 140vh;
         padding-top: 5%;
         margin-bottom: 12px;
         background-size: cover;
